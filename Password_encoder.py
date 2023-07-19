@@ -3,15 +3,13 @@ def encode(password):
     for char in password:
         encoded += str(int(char) + 3)
         return encoded
-        
-#decoder function from ally
+#decoder function from ally recalde
 def decode(password):
         decoded = ''
         for char in password:
             decoded += str(int(char) - 3)
-            return decoded
-            
-#newly formatted print menu options from ally
+            return decoded           
+#newly formatted print menu options from ally recalde
 print('Menu\n')
 print('-------------\n')
 print('1. Encode\n')
@@ -24,7 +22,5 @@ if option == 1:
     password = int(input("Please enter your password to encode: "))
     if len(password) != 8 or not password.isdigit:
         print(" ")
-
-
-#seeing if this works
+#seeing if this works for the second time on a NEW branch
 

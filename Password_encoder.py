@@ -1,14 +1,14 @@
 def encode(password):
     encoded = ''
     for char in password:
-        encoded += str(int(char) + 3)
+        encoded += str(int(char) + 3 % 10)
         return encoded
         
 #decoder function from ally
 def decode(password):
         decoded = ''
         for char in password:
-            decoded += str(int(char) - 3)
+            decoded += str(int(char) - 3 % 10)
             return decoded
             
 #newly formatted print menu options from ally
